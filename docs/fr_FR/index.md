@@ -45,5 +45,7 @@ Puis configure les Min et Max en fonction des capacités de votre conection inte
 
 ![Set min Max](../img/SetMinMax.png)
 
+NE PAS OUBLIER DE SAUVEGARDER
+
 
 Voila C'est Fini !!
