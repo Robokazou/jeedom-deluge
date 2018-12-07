@@ -31,6 +31,14 @@ Cliquer sur "Ajouter" :
 
 Choisir un Nom pour votre client Torrent:
 
+Reseigner l'ip ou l'url de votre delugeWeb et le port. Le Port par defaut de delugeWeb est :8112.
+
+Le mot de passe de votre DelugeWeb.
+
+Et la fréquence de rafraichisement des commandes.
+
+![Configure](../img/Configure.png)
+
 Puis Cliquer sûr l'onglé "Commande"
 
 Arranger l'ordre des attributes jeedom avec des Drag & drop:
