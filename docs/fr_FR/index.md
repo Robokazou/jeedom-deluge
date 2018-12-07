@@ -12,11 +12,11 @@ Ce plugin ce base sur un plugin dans Deluge pour fonctionner. Il faut donc que c
 
 ![Mini procédure d'install WebAPI](../img/install%20WebAPI.png)
 
-L'installation est très simple si vous avez déjà le WebUI. Sinon, commencer par installer le WebUI.
+L'installation est très simple si vous avez déjà le WebUI. Sinon, commencez par installer le WebUI.
 
-Aussi, penser à bien activer le plugin.
+Aussi, pensez à bien activer le plugin.
 
-![Activé plugin dans jeedom](../img/ActivePlugin.png)
+![Activer plugin dans jeedom](../img/ActivePlugin.png)
 
 Création d'un Équipement Deluge
 ===
@@ -31,19 +31,19 @@ Cliquer sur "Ajouter" :
 
 Choisir un Nom pour votre client Torrent:
 
-Renseigner l'IP ou l'URL de votre DelugeWeb et le port. Le Port par defaut de delugeWeb est 8112.
+Renseignez l'IP ou l'URL de votre DelugeWeb et le port. Le Port par defaut de delugeWeb est 8112.
 
 Le mot de passe de votre DelugeWeb.
 
 Et la fréquence de rafraîchissement des commandes.
 
-N'oublier pas d'Activer l'équipement et de le rendre Visible. Eventuellement de lui choisi un Catégorie et un "Objet parent"
+N'oubliez pas d'Activer l'équipement et de le rendre Visible. Eventuellement de lui choisi un Catégorie et un "Objet parent"
 
 ![Configure](../img/Configure.png)
 
-Puis Cliquer sûr l'onglé "Commande"
+Puis cliquez sûr l'onglé "Commande"
 
-Arranger l'ordre des commandes Jeedom avec des Drag & drop:
+Arrangez l'ordre des commandes Jeedom avec des Drag & drop:
 
 ![Drag&Drop](../img/SetArrangement.png)
 
@@ -51,7 +51,7 @@ Je vous propose l'ordre suivant (Mais libre à vous de choisir):
 
 ![Arrangement Fini](../img/ArrangementFini.png)
 
-Puis configure les Min et Max en fonction des capacités de votre connexion internet (à défaut Jeedom à 0 mini 100 maxi)
+Puis configurez les Min et Max en fonction des capacités de votre connexion internet (à défaut Jeedom à 0 mini 100 maxi)
 
 ![Set min Max](../img/SetMinMax.png)
 
@@ -64,7 +64,7 @@ Si vous avais bien configurer (activer l'l'équipement et mis Visible et Choisie
 
 ![widget Default](../img/widget%20Default.png)
 
-Cliquer sur le crayon en haut a droit pour le redimensionner:
+Cliquez sur le crayon en haut a droit pour le redimensionner:
 
 ![Crayon Resize](../img/Resize.png)
 
@@ -72,7 +72,7 @@ Cliquer sur le crayon en haut a droit pour le redimensionner:
 
 ![Widget resized](../img/widget%20Resized.png)
 
-Re cliquer sur le crayon en haut a droit pour sauvegarder votre redimensionnement:
+Re cliquez sur le crayon en haut a droit pour sauvegarder votre redimensionnement:
 
 ![Crayon Resize](../img/Resize.png)
 
