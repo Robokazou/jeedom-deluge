@@ -47,5 +47,19 @@ Puis configure les Min et Max en fonction des capacités de votre conection inte
 
 NE PAS OUBLIER DE SAUVEGARDER
 
+Redimensionner le Widget
+===
+
+Si vous avais bien configurer (activer l'equipement et mis Visible et Choisie un categorie). Vous devrier avoir ceci sur le Dashboard :
+
+![widget Default](../img/widget%20Default.png)
+
+Cliquer sûr le crayon en haut a droit pour le redimentionner:
+
+![Crayon Resize](../img/Resize.png)
+
+À fin d'obtenir ceci :
+
+![Widget resized](../img/widget%20Resized.png)
 
 Voila C'est Fini !!
