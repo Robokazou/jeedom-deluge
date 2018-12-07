@@ -9,8 +9,8 @@
 	"hasDependency" : false,
 	"hasOwnDeamon" : false,
 	"maxDependancyInstallTime" : 0,
-	"changelog" : "https://robokazou.github.io/plugin-delugeTorrent/#language#/changelog",
-	"documentation" : "https://robokazou.github.io/plugin-delugeTorrent/#language#/",
+	"changelog" : "https://robokazou.github.io/jeedom-deluge/#language#/changelog",
+	"documentation" : "https://robokazou.github.io/jeedom-deluge/#language#/",
 	"language" : "PHP",
 	"link" : {
 		"forum":"Lien vers le forum",
