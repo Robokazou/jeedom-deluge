@@ -62,4 +62,8 @@ Cliquer sûr le crayon en haut a droit pour le redimentionner:
 
 ![Widget resized](../img/widget%20Resized.png)
 
+re cliquer sûr le crayon en haut a droit pour sauvegarder votre redimentionnement:
+
+![Crayon Resize](../img/Resize.png)
+
 Voila C'est Fini !!
