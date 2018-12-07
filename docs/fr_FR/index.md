@@ -37,6 +37,8 @@ Le mot de passe de votre DelugeWeb.
 
 Et la fréquence de rafraichisement des commandes.
 
+N'oublier pas d'Activer l'équipement et de le rendre Visible. Eventuellement de lui choisi un Categorie et un "Objet parent"
+
 ![Configure](../img/Configure.png)
 
 Puis Cliquer sûr l'onglé "Commande"
