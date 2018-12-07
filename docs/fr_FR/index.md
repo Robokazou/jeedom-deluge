@@ -3,7 +3,7 @@ Description
 
 Plugin pour piloté un client deluge Torrent https://deluge-torrent.org/
 
-![Icone](img/delugeTorrent_icon.png)
+![Icone](../../plugin_info/deluge_icon.png)
 
 1 - Dépendance
 ===
