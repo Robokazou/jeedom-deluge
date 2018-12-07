@@ -1,7 +1,7 @@
 Description 
 ===
 
-Plugin pour piloté un client deluge Torrent https://deluge-torrent.org/
+Plugin pour piloté un client deluge Torrent [https://deluge-torrent.org/](https://deluge-torrent.org/)
 
 ![Icone](../../plugin_info/deluge_icon.png)
 
