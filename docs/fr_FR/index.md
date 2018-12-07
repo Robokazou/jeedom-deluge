@@ -8,7 +8,8 @@ Plugin pour piloté un client deluge Torrent [https://deluge-torrent.org/](https
 1 - Dépendance
 ===
 
-Ce plugin ce base sur un plugin dans deluge pour fonctionner. Il faut donc que ce dernier soit correctement install[Voir ici](https://github.com/idlesign/deluge-webapi#installation)
+Ce plugin ce base sur un plugin dans deluge pour fonctionner. Il faut donc que ce dernier soit correctement install [Voir ici](https://github.com/idlesign/deluge-webapi#installation)
+
 ![Mini procédure d'install WebAPI](../img/install%20WebAPI.png)
 L'installation est très simple si vous avez deja le WebUI. Sinon, commencer par installer le WebUI.
 
