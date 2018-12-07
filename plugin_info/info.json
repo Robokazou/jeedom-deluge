@@ -1,0 +1,21 @@
+{
+	"id" : "deluge",
+	"name" : "Deluge Torrent",
+	"description" : "Ce plugin permet de piloté deluge torrent via webapi template pour la création de plugin",
+	"licence" : "AGPL",
+	"author" : "Robokazou",
+	"require" : "3.2",
+	"category" : "multimedia",
+	"hasDependency" : false,
+	"hasOwnDeamon" : false,
+	"maxDependancyInstallTime" : 0,
+	"changelog" : "https://robokazou.github.io/plugin-delugeTorrent/#language#/changelog",
+	"documentation" : "https://robokazou.github.io/plugin-delugeTorrent/#language#/",
+	"language" : "PHP",
+	"link" : {
+		"forum":"Lien vers le forum",
+		"video" : "Lien vers une video"
+	},
+	"language" : ["fr_FR","en_US"],
+	"compatibility" : ["miniplus","smart","rpi","docker","diy","mobile"]
+}
