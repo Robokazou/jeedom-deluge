@@ -64,9 +64,20 @@ class deluge extends eqLogic {
 
     public function refresh($_options) {
         $delugeEqLogic = deluge::byId($_options['deluge_id']);
-        
-        $autorefresh = $delugeEqLogic->getConfiguration('autorefresh');
-        if (is_object($delugeEqLogic) && $delugeEqLogic->getIsEnable() == 1 && $autorefresh != '') {
+
+        ob_start();
+        var_dump($delugeEqLogic);
+        $result = ob_get_clean();
+        //log::add('deluge', 'debug', 'deluge:$delugeEqLogic:' . $result);
+
+                // if(!is_object($delugeEqLogic)){
+                        // $cron = cron::byClassAndFunction('deluge', 'refresh', array('deluge_id' => intval($_options['deluge_id'])));
+                        // log::add('deluge', 'debug', 'deluge:Delete Cron');
+                        // $cron->remove();
+        // }
+
+        if (is_object($delugeEqLogic) && $delugeEqLogic->getIsEnable() == 1 && $delugeEqLogic->getConfiguration('autorefresh') != '') {
+
             log::add('deluge', 'debug', $delugeEqLogic->getHumanName() .':'.'refresh start');
 
             $deluge = $delugeEqLogic->getDelugeObj($delugeEqLogic);
@@ -84,17 +95,23 @@ class deluge extends eqLogic {
 
             $up = 0;
             $down = 0;
+            $nbConnection = 0;
+
 
             for ($i = 0; $i < count($torrents); $i++) {
                 $status = $deluge->getTorrentStatus($torrents[$i]->hash, array(), array());
+                //log::add('deluge', 'debug',  $status);
 
                 $up += $status->upload_payload_rate;
                 $down += $status->download_payload_rate;
+                $nbConnection += $status->num_seeds;
+                $nbConnection += $status->num_peers;
             }
 
             $down = round($down / 1024 ,1);
             $up = round($up / 1024 ,1);
-            $nbConnection = round($deluge->getNumConnections() ,1);
+            $nbConnection = round($nbConnection ,1);
+
             $maxDown = round($config->max_download_speed ,1);
             $maxUp = round($config->max_upload_speed ,1);
             $maxConnection = round($config->max_connections_global ,1);
@@ -129,11 +146,11 @@ class deluge extends eqLogic {
     }
 
     public function preInsert() {
-        
+
     }
 
     public function postInsert() {
-        
+
     }
 
     public function preSave() {
@@ -262,11 +279,11 @@ class deluge extends eqLogic {
         $refresh->setType('action');
         $refresh->setSubType('other');
         $refresh->save();
-        
+
         $refreshPeriode = $this->getConfiguration("autorefresh");
         //log::add('deluge', 'debug', $this->getHumanName() .':'.'refresh period read "' . $refreshPeriode . '"');
         $cron = cron::byClassAndFunction('deluge', 'refresh', array('deluge_id' => intval($this->getId())));
-        
+
         //log::add('deluge', 'debug', $this->getHumanName() .':tata'.$this->getIsEnable());
         if ( $this->getIsEnable() && $refreshPeriode != '') {
             if(!is_object($cron)){
@@ -283,7 +300,7 @@ class deluge extends eqLogic {
                 $cron->remove();
             }
         }
-        
+
         //if it is just actualised of refreshPeriode
         if ($refreshPeriode != '' && is_object($cron)) {
             log::add('deluge', 'debug', $this->getHumanName() .':set Schedule "'.$refreshPeriode.'"');
@@ -301,15 +318,18 @@ class deluge extends eqLogic {
     }
 
     public function postUpdate() {
-        
+
     }
 
     public function preRemove() {
-        
+
     }
 
     public function postRemove() {
-        
+                log::add('deluge', 'debug', $this->getHumanName() .':Delete Cron');
+        $cron = cron::byClassAndFunction('deluge', 'refresh', array('deluge_id' => intval($this->getId())));
+                $cron->stop();
+                $cron->remove();
     }
 
     /*
